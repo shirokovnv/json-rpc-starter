@@ -24,3 +24,5 @@ services:
     build:
       dockerfile: ./docker/openrpc-validator/Dockerfile
       context: .
+    volumes:
+      - ./schema/openrpc.json:/home/node/openrpc.json

@@ -5,10 +5,13 @@
     "license": "MIT",
     "private": false,
     "scripts": {
-        "openrpc-validator": "node openrpc-validator.js"
+        "lint-schema": "eslint",
+        "validate-schema": "node openrpc-validator.js"
     },
     "dependencies": {
         "@open-rpc/schema-utils-js": "1.14.0",
+        "eslint": "^6.7.2",
+        "eslint-plugin-json": "^3.1.0",
         "yargs": "15.4"
     }
 }
