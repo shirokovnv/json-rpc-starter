@@ -1,0 +1,14 @@
+{
+    "name": "openrpc-validator",
+    "version": "0.0.1",
+    "description": "Validates an OpenRPC document.",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "openrpc-validator": "node openrpc-validator.js"
+    },
+    "dependencies": {
+        "@open-rpc/schema-utils-js": "1.14.0",
+        "yargs": "15.4"
+    }
+}

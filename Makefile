@@ -28,6 +28,9 @@ mock-server: ## Run mock-server
 	printf " \e[30;48;5;82m  %s  \033[0m\n" "http://localhost:8080"
 	printf " \e[30;48;5;82m  %s  \033[0m\n" "http://`$(call get_container_ip_by_lable, $(mock_server_label))`:8080"
 
+validate: ## Validate JSON schema
+	$(dc_bin) run openrpc-validator
+
 down: ## Destroy all running containers
 	$(dc_bin) down
 

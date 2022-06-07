@@ -19,3 +19,8 @@ services:
       - 8080:8080
     volumes:
       - ./schema:/app/openrpc:cached
+  
+  openrpc-validator:
+    build:
+      dockerfile: ./docker/openrpc-validator/Dockerfile
+      context: .
