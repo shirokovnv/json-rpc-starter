@@ -14,7 +14,7 @@ This is a starter kit for creating JSON schemas based on the [Open-RPC](https://
 
 ## Quick start
 
-1. include your api scpecification to `schema/openrpc.json`.
+1. include your api specification to `schema/openrpc.json`.
 
 2. run `make pull`
 
