@@ -8,6 +8,10 @@ mock_server_label := specs-mock-server
 
 SHELL = /bin/sh
 
+.PHONY : help \
+         docs-watch mock-server \
+         pull down \
+         validate
 .SILENT : help mock-server
 .DEFAULT_GOAL : help
 
