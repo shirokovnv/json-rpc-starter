@@ -1,70 +1,70 @@
 {
-    "openrpc": "1.2.4",
-    "info": {
-      "title": "Simple RPC overview",
-      "version": "2.0.0"
-    },
-    "methods": [
-      {
-        "name": "posts.list",
-        "summary": "List all posts",
-        "params": [],
-        "result": {
-          "name": "list_posts_result",
-          "schema": {
-            "type": "object"
-          }
-        },
-        "examples": [
-          {
-            "name": "all posts",
-            "summary": "its all your posts",
-            "description": "don't forget to add description here",
-            "params": [],
-            "result": {
-              "name": "listPostsExample",
-              "value": {
-                "posts": [
-                  {
-                    "id": 1,
-                    "title": "One little post",
-                    "body": "With some text inside...",
-                    "created_at": "2022-01-21T11:33:21Z",
-                    "updated_at": "2022-01-21T11:33:21Z"
-                  },
-                  {
-                    "id": 2,
-                    "title": "Another post",
-                    "body": "And text here...",
-                    "created_at": "2022-02-21T11:33:21Z",
-                    "updated_at": "2022-02-21T11:33:21Z"
-                  }
-                ]
-              }
-            }
-          }
-        ]
+  "openrpc": "1.2.4",
+  "info": {
+    "title": "Simple RPC overview",
+    "version": "2.0.0"
+  },
+  "methods": [
+    {
+      "name": "posts.list",
+      "summary": "List all posts",
+      "params": [],
+      "result": {
+        "name": "list_posts_result",
+        "schema": {
+          "type": "object"
+        }
       },
-      {
-        "name": "version.get",
-        "summary": "Show your api version",
-        "params": [],
-        "result": {
-          "name": "get_version_result",
-          "schema": {
-            "type": "string"
-          }
-        },
-        "examples": [
-          {
-            "name": "stringifiedVersionExample",
-            "params": [],
-            "result": {
-              "name": "get_version_example",
-              "value": "1.0.0"
+      "examples": [
+        {
+          "name": "all posts",
+          "summary": "its all your posts",
+          "description": "don't forget to add description here",
+          "params": [],
+          "result": {
+            "name": "listPostsExample",
+            "value": {
+              "posts": [
+                {
+                  "id": 1,
+                  "title": "One little post",
+                  "body": "With some text inside...",
+                  "created_at": "2022-01-21T11:33:21Z",
+                  "updated_at": "2022-01-21T11:33:21Z"
+                },
+                {
+                  "id": 2,
+                  "title": "Another post",
+                  "body": "And text here...",
+                  "created_at": "2022-02-21T11:33:21Z",
+                  "updated_at": "2022-02-21T11:33:21Z"
+                }
+              ]
             }
           }
-        ]
-      }
-    ]
-  }
+        }
+      ]
+    },
+    {
+      "name": "version.get",
+      "summary": "Show your api version",
+      "params": [],
+      "result": {
+        "name": "get_version_result",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "examples": [
+        {
+          "name": "stringifiedVersionExample",
+          "params": [],
+          "result": {
+            "name": "get_version_example",
+            "value": "1.0.0"
+          }
+        }
+      ]
+    }
+  ]
+}

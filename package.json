@@ -1,17 +1,20 @@
 {
-    "name": "openrpc-validator",
-    "version": "0.0.1",
-    "description": "Validates an OpenRPC document.",
-    "license": "MIT",
-    "private": false,
-    "scripts": {
-        "lint-schema": "eslint",
-        "validate-schema": "node openrpc-validator.js"
-    },
-    "dependencies": {
-        "@open-rpc/schema-utils-js": "1.14.0",
-        "eslint": "^6.7.2",
-        "eslint-plugin-json": "^3.1.0",
-        "yargs": "15.4"
-    }
+  "name": "openrpc-validator",
+  "version": "0.0.2",
+  "description": "Validates an OpenRPC document.",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "format": "prettier --write",
+    "lint": "eslint",
+    "validate": "node openrpc-validator.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "@open-rpc/schema-utils-js": "1.14.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-json": "^3.1.0",
+    "yargs": "15.4"
+  }
 }

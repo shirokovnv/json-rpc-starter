@@ -25,4 +25,4 @@ services:
       dockerfile: ./docker/openrpc-validator/Dockerfile
       context: .
     volumes:
-      - ./schema/openrpc.json:/home/node/openrpc.json
+      - ./schema:/home/node/schema

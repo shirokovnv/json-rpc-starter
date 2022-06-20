@@ -7,7 +7,8 @@ WORKDIR /home/node
 
 COPY --chown=node:node ./package.json /home/node/package.json
 COPY --chown=node:node ./.eslintrc.js /home/node/.eslintrc.js
-COPY --chown=node:node ./schema/openrpc.json /home/node/openrpc.json
+COPY --chown=node:node ./.prettierrc /home/node/.prettierrc
+COPY --chown=node:node ./schema /home/node/schema
 
 RUN yarn install
 

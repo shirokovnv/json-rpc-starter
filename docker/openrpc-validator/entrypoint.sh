@@ -1,6 +1,7 @@
 #!/bin/sh
 
-SCHEMA=openrpc.json
+SCHEMA=./schema/openrpc.json
 
-yarn run lint-schema $SCHEMA
-yarn run validate-schema -f $SCHEMA
+yarn run format $SCHEMA
+yarn run lint $SCHEMA
+yarn run validate -f $SCHEMA
