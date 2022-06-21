@@ -4,14 +4,12 @@ const fs = require('fs');
 const yargs = require('yargs');
 const rpcUtils = require('@open-rpc/schema-utils-js');
 
-const options = yargs
-  .usage('Usage: -f <openrpc.json>')
-  .option('f', {
-    alias: 'file',
-    describe: 'open-rpc schema file path',
-    type: 'string',
-    demandOption: true,
-  }).argv;
+const options = yargs.usage('Usage: -f <openrpc.json>').option('f', {
+  alias: 'file',
+  describe: 'open-rpc schema file path',
+  type: 'string',
+  demandOption: true,
+}).argv;
 
 const file = options.file;
 
