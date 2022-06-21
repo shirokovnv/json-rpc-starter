@@ -6,12 +6,7 @@ RUN set -x \
 
 USER node:node
 
-COPY --chown=node ./docs-watch/public /app/public
-COPY --chown=node ./docs-watch/src /app/src
-COPY --chown=node ./docs-watch/package.json /app
-COPY --chown=node ./docs-watch/package-lock.json /app
-COPY --chown=node ./docs-watch/tsconfig.json /app
-COPY --chown=node ./docs-watch/config-overrides.js /app
+COPY --chown=node ./docs-watch /app
 COPY --chown=node ./schema /app/src/schema
 
 WORKDIR /app
