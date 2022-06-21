@@ -2,9 +2,9 @@ version: '3.2'
 
 services:
   docs-watch:
-    image: avtodev/open-rpc-docs-builder:1.3
-    environment:
-      - REACT_APP_THEME=dark
+    build:
+      dockerfile: ./docker/docs-watch/Dockerfile
+      context: .
     volumes:
       - ./schema:/app/src/schema:cached
     command: yarn run start
@@ -19,10 +19,10 @@ services:
       - 8080:8080
     volumes:
       - ./schema:/app/openrpc:cached
-  
+
   openrpc-validator:
     build:
       dockerfile: ./docker/openrpc-validator/Dockerfile
       context: .
     volumes:
-      - ./schema:/home/node/schema
+      - ./schema:/home/node/schema:cached

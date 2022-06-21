@@ -24,7 +24,7 @@ help: ## Show this help
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
 docs-watch: ## Run documentation watcher
-	$(dc_bin) run -p 3000:3000 docs-watch yarn run start
+	$(dc_bin) run -p 3000:3000 docs-watch npm run start
 
 mock-server: ## Run mock-server
 	$(dc_bin) up -d mock-server

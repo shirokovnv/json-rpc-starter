@@ -8,7 +8,7 @@ This is a starter kit for creating JSON schemas based on the [Open-RPC](https://
 
 > [make](https://www.gnu.org/software/make/manual/make.html)
 
-> [avto-dev rpc docs builder](https://github.com/avto-dev/open-rpc-docs-builder-docker)
+> [open-rpc docs-react](https://github.com/open-rpc/docs-react)
 
 > [open-rpc mock-server](https://github.com/open-rpc/mock-server)
 
