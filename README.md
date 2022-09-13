@@ -23,3 +23,7 @@ This is a starter kit for creating JSON schemas based on the [Open-RPC](https://
 4. run `make mock-server` to start example rpc server.
 
 or run `make help` for available commands.
+
+## License
+
+MIT. Please see the [license file](LICENSE.md) for more information.
